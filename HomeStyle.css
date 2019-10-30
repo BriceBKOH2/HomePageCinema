@@ -1,6 +1,12 @@
-table {
-    empty-cells: hide;
+
+/* Html page */
+
+html {  
+    text-align: center;
 }
+
+
+/* Title */
 
 .title {
     text-align: center;
@@ -10,17 +16,24 @@ h1 {
     font-size: 300%;
 }
 
+
+/* header */ 
+
+header {
+    background-color: tan;
+}
+
+
 /* image */
 
 .logo {
-    max-height: 50px;
+    max-height: 75px;
     width: auto;
 }
 
+
 /* article */
-article {
-    text-align: center;
-}
+
 .section_1 {
     background: url("images/img_fond_section_1.jpg") center;
     background-size: cover;
@@ -39,10 +52,11 @@ footer {
     background-color: cornflowerblue;
 }
 
+
 /* Span */
 
 .top_align_left {
-    position: absolute;
+    position: relative;
     left: 15%;
 }
 
@@ -50,5 +64,33 @@ footer {
     position: absolute;
     right : 15%;
 }
+
+/* Table */
+
+table {
+    empty-cells: hide;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th:empty, td:empty {
+    visibility: hidden;
+}
+
+th {
+        border: 1px solid white;
+        background-color: rgb(74, 74, 231);
+}
+
+td {
+        border: 1px solid steelblue;
+        background-color: rgb(245, 235, 235);
+}
+
 
 /* Other */
