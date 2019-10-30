@@ -1,0 +1,54 @@
+table {
+    empty-cells: hide;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+/* image */
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+/* article */
+article {
+    text-align: center;
+}
+.section_1 {
+    background: url("images/img_fond_section_1.jpg") center;
+    background-size: cover;
+    color : wheat;
+}
+
+.section_2 {
+    background-color: beige;
+}
+
+.section_3 {
+    background-color: cadetblue;
+}
+
+footer {
+    background-color: cornflowerblue;
+}
+
+/* Span */
+
+.top_align_left {
+    position: absolute;
+    left: 15%;
+}
+
+.top_align_right {
+    position: absolute;
+    right : 15%;
+}
+
+/* Other */
