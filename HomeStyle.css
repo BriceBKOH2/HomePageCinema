@@ -6,6 +6,8 @@ html {
     background: url("images/img_fond_section_1.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
+    overflow-x: hidden;
+    font-size: 90%;
 }
 
 
@@ -24,8 +26,8 @@ html {
 /* Title */
 
 .title {
-    margin: 0px;
-    padding: 1em;
+    margin: 0rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: center;
     text-decoration: underline;
@@ -35,7 +37,7 @@ html {
 
 h1 {
     color: rgba(204, 26, 26, 0.808);
-    font-size: 3em;
+    font-size: 3rem;
     text-shadow:
     -1px 1px 0 #000,
     1px -1px 0 #000,
@@ -45,6 +47,7 @@ h1 {
 
 h2 {
     color: rgba(204, 26, 26, 0.808);
+    font-size: 2rem;
     text-shadow:
     -1px 1px 0 #000,
     1px -1px 0 #000,
@@ -53,7 +56,8 @@ h2 {
 }
 
 h3 {
-    color: rgba(224, 178, 178, 0.767);
+    color: rgba(165, 34, 34, 0.767);
+    font-size: 1.5rem;
     text-shadow:
     -1px 1px 0 #000,
     1px -1px 0 #000,
@@ -66,25 +70,35 @@ h3 {
 header {
     background-color: rgba(143, 10, 10, 0.555);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
 }
 
 /* body */
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 /* image */
 
 .logo {
-    height: 75px;
+    max-height: 5rem;
     width: auto;
+    margin: 2rem;
+}
+
+.menu_icon {
+    max-height: 3.5rem;
+    width: auto;
+    padding: 0.5rem;
+    border: 0.15rem solid black;
+    background: rgba(184, 2, 2, 0.699);
 }
 
 .affiche {
     padding: 0.5em;
-    height: 400px;
+    height: 30rem;
 }
 
 
@@ -97,20 +111,46 @@ body {
 
 /* Article */
 
+article {
+    text-align: justify;
+    color : rgb(196, 191, 191);
+    text-shadow:
+    -1px 1px 0 rgba(155, 9, 9, 0.87),
+    1px -1px 0 rgba(155, 9, 9, 0.87),
+    -1px 1px 0 rgba(155, 9, 9, 0.87),
+    1px 1px 0 rgba(155, 9, 9, 0.87);
+    padding: 5px;
+}
+
 .descriptionAffiche {
+    color : black;
     border: 1px solid black;
+    text-shadow: none;
     margin-bottom: 0.75em;
     max-width: 450px;
     background-color: rgba(255, 255, 255, 0.87);
 }
 
 
-/* li */
+/* liste */
+
+ul {
+    list-style: none;
+}
 
 li {
     text-align: left;
 }
 
+.menu {
+    display: flex;
+    align-content: center;
+}
+
+.menu_sub {
+    display: none;
+    background: red;
+}
 
 /* Section */
 
@@ -120,19 +160,19 @@ section {
 
 .section_1 {
     height:     500px;
-    color : wheat;
+    color : rgba(0, 0, 0, 0.342);
 }
 
 .section_2 {
-    background-color: rgba(245, 245, 220, 0.315);
+    background-color: rgba(0, 0, 0, 0.514);
 }
 
 .section_3 {
-    background-color: rgba(36, 52, 53, 0.459);
+    background-color: rgba(0, 0, 0, 0.719);
 }
 
 .section_4 {
-    background-color: rgba(21, 22, 22, 0.897);
+    background-color: rgba(0, 0, 0, 0.897);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -171,7 +211,7 @@ section {
 
 table {
     empty-cells: hide;
-    margin: 0 auto;
+    margin: 15px;
 }
 
 th, td {
@@ -185,17 +225,13 @@ th, td {
     1px 1px 0 #000;
 }
 
-th:empty, td:empty {
-    visibility: hidden;
-}
-
 th {
-        border: 1px solid rgba(8, 8, 8, 0.308);
+        border: 1px solid rgba(138, 3, 3, 0.993);
         background-color: rgba(0, 0, 0, 0.397);
 }
 
 td {
-        border: 1px solid rgba(158, 38, 38, 0.822);
+        border: 1px solid rgba(170, 1, 1, 0.507);
         background-color: rgb(0, 0, 0);
 }
 
