@@ -24,15 +24,16 @@
           </a>
         </div>
 
-        <ul class="menu">
-          <li><img class="menu_icon" src="images/menu_icon.png" alt="icone menu"></li>
+        <div class="menu">
+          <img class="menu_icon" src="images/menu_icon.png" alt="icone menu">
 
-          <ul class="menu_sub">
-            <li>Biletterie</li>
-            <li>Marmotte</li>
-            <li>Concurrent</li>
-          </ul>
-        </ul>
+          <div class="menu_sub">
+            <a href="Billeterie.html">Biletterie</a>
+            <a href="https://www.youtube.com/watch?v=iUXAHc-ABoY">Marmotte</a>
+            <a href="http://www.allocine.fr/seance/salle_gen_csalle=P0702.html">Concurrent</a>
+          </div>
+        </div>
+        
       </div>
     
     </header>
@@ -139,23 +140,20 @@
       </section>
 
       <section class="section_4">
-        <div class="section_4_">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.03646745302197!2d6.6133146510346705!3d45.30413712179606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789842f09cac559%3A0xe76ffef19899aaa2!2sMont%20du%20Borgne!5e0!3m2!1sen!2sfr!4v1572511470221!5m2!1sen!2sfr"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+            class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.03646745302197!2d6.6133146510346705!3d45.30413712179606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789842f09cac559%3A0xe76ffef19899aaa2!2sMont%20du%20Borgne!5e0!3m2!1sen!2sfr!4v1572511470221!5m2!1sen!2sfr"
+             frameborder="0" style="border:0;" allowfullscreen>
           </iframe>
-        </div>
 
         <div>
           <h3>Adresse Cinéma</h3>
-          
+            
           <article>
             Mont du Borgne, la cabane au fond du jardin.<br>
             73550 Les Belleville
           </article>
-          
+            
           <h3>Telephone</h3>
-
           <article>
             Billeterie : 23h/24 6j/7<br>
             00 01 02 03 04 05 (06 pour les intimes)<br>
@@ -163,35 +161,32 @@
             Urgences : (en cours de renovation, n'ayez pas d'urgence)<br>
             15
           </article>
-         
+
         </div>
+
       </section>
     
       <section class="section_5">
-        <form action="/operation_page" method="post">
-          <div>
-            <span>
-              <input type="text" id="name" name="user_lastname" placeholder="Nom">
-              <input type="text" id="name" name="user_firstname" placeholder="Prenom">
-            </span>
+        <form class="container_form_block" action="/operation_page" method="post">
+          <div class="container_form_line">
+            <input type="text" id="name" name="user_lastname" placeholder="Nom">
+            <input type="text" id="name" name="user_firstname" placeholder="Prenom">
           </div>
 
-          <div>
-            <span>
-              <input type="email" id="mail" name="user_mail" placeholder="Mail">
-              <input type="tel" id="phone" name="user_phone" placeholder="Telephone">
-            </span>
+          <div class="container_form_line">
+            <input type="email" id="mail" name="user_mail" placeholder="Mail">
+            <input type="tel" id="phone" name="user_phone" placeholder="Telephone">
           </div>
 
-          <div>
+          <div class="container_form_fullline">
             <input type="text" id="subject" name="user_subject" placeholder="Sujet">
           </div>
 
-          <div>
-            <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+          <div class="container_form_fullline">
+            <textarea id="msg" name="user_message" placeholder="Message" ></textarea>
           </div>
 
-          <div class="button">
+          <div class="button container_form_line">
             <button type="submit">ENVOYER</button>
           </div>
 
@@ -201,17 +196,18 @@
     </main>
 
     <footer>
-    
-      <article>
-        NEWSLETTER + RÉSEAUX SOCIAUX
-      </article>
+      <div class="newsletter container_footer">
+        <article class="article_news">
+          <a href="http://www.legorafi.fr">NEWSLETTER</a> + <a href="https://www.facebook.com">RÉSEAUX SOCIAUX</a>
+        </article>
+      </div>
 
-      <div class="copyright">
+      <div class="copyright container_footer">
         <article>
           COPYRIGHT - MENTIONS LÉGALES
         </article>
-      
       </div>
+
     </footer>
 
   </body>
