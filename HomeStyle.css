@@ -280,12 +280,14 @@ section {
 
 .container_info_pratique {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .container_form_block {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container_form_line {
