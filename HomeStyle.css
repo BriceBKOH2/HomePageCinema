@@ -130,6 +130,21 @@ body {
 }
 
 
+/* Button */
+
+.button_form {
+    background: rgb(189, 2, 2);
+    color: black;
+    border: 2px solid black;
+}
+
+.button_form:hover {
+    background: black;
+    color: rgb(189, 2, 2);
+    border: 2px solid rgb(189, 2, 2);
+} 
+
+
 /* Div */
 
 .newsletter {
@@ -169,11 +184,6 @@ article {
 
 
 /* liste */
-
-ul {
-    list-style: none;
-}
-
 li {
     text-align: left;
 }
@@ -245,8 +255,9 @@ section {
 
 .section_5 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: left;
+    align-items: center;
     margin: 1rem;
 }
 
@@ -269,7 +280,6 @@ section {
 
 .container_info_pratique {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -282,22 +292,13 @@ section {
     display: flex;
 }
 
-.container_form_line input{
+.container_form_line input, textarea{
     width: 100%;
     margin: 0.1rem;
 }
 
 .container_form_line button{
     width: 33%;
-    margin: 0.1rem;
-}
-
-.container_form_fullline {
-    display: flex;
-}
-
-.container_form_fullline input,textarea{
-    width: 100%;
     margin: 0.1rem;
 }
 
